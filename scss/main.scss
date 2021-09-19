@@ -1,0 +1,9 @@
+@import './resets';
+@import './variables';
+
+body {
+    background: url(/images/bg-img.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
