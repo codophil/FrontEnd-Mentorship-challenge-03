@@ -18,6 +18,16 @@ body {
   background: url(/images/bg-img.jpg) no-repeat;
   background-size: cover;
   font-family: $main-font;
+  height: 100vh;
+}
+
+/* Nav bar */
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
 }
 
 .main-nav-title {
@@ -42,17 +52,12 @@ body {
   color: $red-color;
 }
 
+/* Search Section */
+
 main {
   @include flexCenter();
-  height: 80vh;
+  height: 80%;
 }
-
-.main-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-}
-
 #search-section {
   @include flexCenter();
 }
@@ -138,5 +143,19 @@ input[type="button"] {
   }
   &:active {
     transform: translateY(1px);
+  }
+}
+
+/* Media queries */
+
+@media screen and (max-width: 600px) {
+  .search-section {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-nav {
+    flex-direction: column;
   }
 }
