@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>FrontEnd-Mentorship-challenge-03</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <h1 class="main-nav-title">Travel With Us</h1>
+        <div class="main-nav-account">
+          <h2 class="account-menu">Account</h2>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="search-section">
+        <form>
+          <div class="search-section">
+            <div class="region-selection">
+              <label for="region">Where you go?</label>
+              <select name="region" id="region">
+                <option value="default">Select a region</option>
+                <option value="shiraz">Shiraz, Iran</option>
+                <option value="tokyo">Tokyo, Japan</option>
+                <option value="london">London, England</option>
+              </select>
+            </div>
+            <div class="check-in">
+              <label for="check-in-date">Check in</label>
+              <input type="date" name="check-in-date" id="check-in-date" />
+            </div>
+            <div class="check-out">
+              <label for="check-out-date">Check out</label>
+              <input type="date" name="check-out-date" id="check-out-date" />
+            </div>
+          </div>
+          <div class="search-button-section">
+            <input type="button" value="Search" />
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
