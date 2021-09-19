@@ -15,6 +15,120 @@ html {
 body {
   background: url(/images/bg-img.jpg) no-repeat;
   background-size: cover;
-  height: 100vh;
+  font-family: "Roboto", "sans-serif";
+}
+
+.main-nav-title {
+  color: #16A085;
+  font-size: 3rem;
+}
+
+.main-nav-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.account-menu {
+  color: #16A085;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.fas {
+  padding: 1rem;
+  font-size: 2rem;
+  color: #B75D5D;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+}
+
+#search-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.search-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+label {
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+.search-button-section {
+  padding: 1rem;
+}
+
+.search-button-section input {
+  background-color: #16A085;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

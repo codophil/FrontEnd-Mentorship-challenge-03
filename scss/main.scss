@@ -2,9 +2,86 @@
 @import './resets';
 @import './variables';
 
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin borderRadius {
+    border-radius: 2rem;
+    background-color: $light-color;
+    padding: 1rem;
+}
+
 body {
     background: url(/images/bg-img.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    font-family: $main-font;
+}
 
+.main-nav-title {
+    color: $primary-color;
+    font-size: 3rem
+}
+
+.main-nav-account {
+    @include flexCenter();
+    @include borderRadius();
+}
+
+.account-menu {
+    color: $primary-color;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.fas {
+    padding: 1rem;
+    font-size: 2rem;
+    color: $red-color;
+}
+
+main {
+    @include flexCenter();
+    height: 80vh;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#search-section {
+    @include flexCenter();
+}
+
+.search-section {
+    @include flexCenter();
+    @include borderRadius()
+}
+
+.search-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+label {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+
+.search-button-section {
+    padding: 1rem;
+}
+.search-button-section input {
+    background-color: $primary-color;
+    color: $light-color;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
 }
