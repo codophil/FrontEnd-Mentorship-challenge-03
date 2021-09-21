@@ -60,6 +60,16 @@ body {
   padding: 1rem;
 }
 
+.main-nav-account:hover {
+  background-color: #16a085;
+  cursor: pointer;
+}
+
+.main-nav-account:hover h2,
+.main-nav-account:hover i {
+  color: #fff;
+}
+
 .account-menu {
   color: #16a085;
   font-size: 1.5rem;
@@ -139,6 +149,10 @@ label {
   font-size: 1.5rem;
   border: none;
   background-color: transparent;
+}
+
+#region:hover {
+  cursor: pointer;
 }
 
 #region:focus {

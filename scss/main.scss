@@ -40,6 +40,14 @@ body {
 .main-nav-account {
   @include flexCenter();
   @include borderRadius();
+  &:hover {
+    background-color: $primary-color;
+    cursor: pointer;
+    h2,
+    i {
+      color: $light-color;
+    }
+  }
 }
 
 .account-menu {
@@ -88,6 +96,9 @@ label {
   font-size: 1.5rem;
   border: none;
   background-color: transparent;
+  &:hover {
+    cursor: pointer;
+  }
   &:focus {
     outline: none;
   }
