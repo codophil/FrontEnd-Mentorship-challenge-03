@@ -15,7 +15,9 @@
 }
 
 body {
-  background: url(/images/bg-img.jpg) no-repeat;
+  display: flex;
+  flex-direction: column;
+  background: url(../../images/bg-img.jpg) no-repeat;
   background-size: cover;
   font-family: $main-font;
   height: 100vh;
